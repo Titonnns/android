@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
 @font-face {
-    font-family:"idroid" ;
-    src: url(fontes/idroid.otf) format(opentype);
+    font-family:"android" ;
+    src: url(../fonts/IDroid.otf) format(opentype);
 }
 :root{
     --cor0: #84e1ad;
@@ -13,7 +13,7 @@
     --cor5: hwb(0 100% 0%);
 
     --font1: 'Arial','Helvetica', 'sans-serif';
-    --fonte-special: 'idroid', 'cursiva';
+    --fonte-special: 'android', 'cursiva';
 }
 
 *{
@@ -55,6 +55,7 @@ header{
     color: hwb(0 100% 0%);
     margin: 0px;
     height: 180px;
+    max-width: 100%;
 }
 header > p{
     font: 1em sans-serif;
@@ -65,9 +66,10 @@ header > p{
 
     nav#menu a{
          color: var(--cor5);
-         margin: 10px;
-        padding: 10px;
+         margin: 7px;
+        padding: 7px;
         transition-duration: 0.3s;
+       
 }
     nav#menu a:hover{
          background-color: var(--cor4);
@@ -85,12 +87,12 @@ header > p{
         box-sizing: border-box;
 }
     h1#t1{
-        font-family: f, var(--font1);
+        font-family: var(--fonte-special) ;
         color: var(--cor1);
         font-size: 27px;
 }
 h2{
-    font-family: var(--fonte-special), var(--font1);
+    font-family: var(--fonte-special);
     color: var(--cor1);
     background-color: var(--cor3);
     margin: 10px 0 10px 0;
